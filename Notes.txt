@@ -1,0 +1,788 @@
+Q) What is GitHub?
+A)
+-GitHub is a website which is used to store the data permanently
+-It gives us collaboration
+-it gives us a visual experience of the repositories
+
+Q) What is Git?
+A)
+-Git is a version control system used to track the changes in the files or folders
+
+Q) Git commands
+A)
+-To set up your path in git bash=>(cd "file_path")
+-Initialize the empty git repository in the local machine=>(git init)
+-To convert untracked file to tracked file and add to staging area=>(git add filename)
+-This is used to write commit message and to local repo=>(git commit -m "msg")
+-This is used to push the code from local repo to remote repo=>(git push url)
+-This command is used to take a copy of remote repo into local repo=>(git clone url)
+-git config --global user.email "subhapreetpatro2004@gmail.com"
+-git config --global user.name "Subhapreet21"
+-Git initialization in the folder=>(git init)
+-git status
+-To add all the files in a particular folder=>(git add .)
+-To link your local repo to your remote repo=>(git remote add origin [url_from_github])
+-To push your files from the local repo to the remote repo=>(git push -u origin master)
+
+
+http://vpaste.net/j0Atr
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Q) What is HTML?
+A)
+-Hyper Text Markup Language
+-Used to create a basic structure of a web page
+
+##Execution
+
+subha@SubhapreetPatro MINGW64 ~
+$ git config --global user.email "subhapreetpatro2004@gmail.com"
+
+subha@SubhapreetPatro MINGW64 ~
+$ git config --global user.name "Subhapreet21"
+
+subha@SubhapreetPatro MINGW64 ~
+$ ^C
+
+
+subha@SubhapreetPatro MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+subha@SubhapreetPatro MINGW64 ~
+$ cd c/Engineering Third Year
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 ~
+$ cd /c/
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd /Engineering Third Year/Semester 6/Campus Recruitment Training
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd /Engineering Third Year/Semester 6/Campus Recruitment Training/
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd /Engineering Third Year/
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd "/Engineering Third Year/Semester 6/Campus Recruitment Training/"
+bash: cd: /Engineering Third Year/Semester 6/Campus Recruitment Training/: No such file or directory
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd "/Engineering Third Year/"
+bash: cd: /Engineering Third Year/: No such file or directory
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd "C:\Engineering Third Year\Semester 6\Campus Recruitment Training"
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training
+$ git init
+Initialized empty Git repository in C:/Engineering Third Year/Semester 6/Campus Recruitment Training/.git/
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Notes.txt
+        Working of Git.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git add .
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Notes.txt
+        new file:   Working of Git.jpg
+
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git commit -m "Files are added"
+[master (root-commit) abbc428] Files are added
+ 2 files changed, 27 insertions(+)
+ create mode 100644 Notes.txt
+ create mode 100644 Working of Git.jpg
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git remote add origin https://github.com/Subhapreet21/Demo_21102004.git
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 56.68 KiB | 28.34 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Subhapreet21/Demo_21102004.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$
+
+
+http://vpaste.net/oTM6T
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+##JavaScript##
+Javascript makes use of interpreter.
+
+1)Static Websites: These pages are created with fixed content that is the same for all users. They are built using HTML, CSS, and JavaScript, and don't use a database or server-side scripting languages. Static pages are good for projects with infrequent content changes, like a small business's online brochure. Ex: Facebook login page
+
+2)Dynamic websites: These pages can change based on the user, the time, or other factors. They are built using back-end code and server-side languages like PHP, Ruby, Python, or server-side JavaScript. Dynamic pages are designed for continuous content management, like a news portal. Ex: YouTube recommendations, Google maps, Cricbuzz(scores)
+
+Variables:
+-Used to store data/values/literals
+-Variables are used to store the data
+-They can store any kind of data
+-While taking the same variable names, the latest value will be considered
+-Variables can start with letters,_,$(For JS)
+-Variables can't start with numbers
+-Variables can include letters, numbers,_,$
+-Variables are Case sensitive
+-Space between two variables are not allowed
+
+Types of variables:
+1)var :- Redeclaration and reinitialization possible
+2)let :- Only reinitialization possible
+3)const :- Both are not possible
+
+Ex:
+var username="Rakesh"
+console.log(username);
+
+Here-->var:-variable
+       username:-identifier(Name given for the memory block)
+       Rakesh:-value/data
+   
+-Extension of JavaScript file:-  .js
+
+*In the browser, if we want to run javascript file or css file we must connect those files with html file.*
+
+consol.log(): It is a method to print the output in the developer console
+document.writeln(): It is a method used to print the output on the UI
+
+Q) What is a comment?
+A)
+-Comments are the ignored lines by the browser
+-To give information to the developer
+
+#Types:
+html: <!-- hjadsb,k --!>
+css: /* jhv,bjsd,b */
+javascript: Single-line: //
+            Multi-line: /**/
+
+Q) What is a data type?
+A)
+-Used to specify what kind of data is stored in the variable.
+
+#Types:
+1) Primitive data types:-
+-They are built-in
+-They are immutable
+-They can store only a single value
+	-String
+	-Number
+	-Boolean
+	-Undefined
+	-Null
+	-Symbol
+	-bigint
+
+##String
+-It is a sequence of characters enclosed within "", '', ``(template literals/backticks)
+
+##Number
+-Range: -2^53-1 to +2^53-1 . Upto this range we consider as number data type. Beyond this range it will be bigint.
+
+##Boolean(True/False)
+
+##Undefined: Variables are declared but not initialized with the value
+
+##Null: Empty value or the absence of an object
+-Return type of null is 'object'
+
+##bigint: Any value exceeding the range of number data type/ Any value suffixed with n
+
+##Symbol
+
+
+2) Non-Primitive data types:-
+-They are user defined
+-They are mutable
+-They can store multiple values
+	-Object(math, date, json)
+	-Array
+	-Functions
+
+http://vpaste.net/KCi68
+http://vpaste.net/JvF1F
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Operators:
+-Operators are special symbols used to perform some operations on operands.
+Ex: 10(operand1) +(opertor) 20(operand2)
+
+Types of operators:
+-Unary
+-Binary
+-Ternary(operand1 ? operand2 : operand3)
+
+1) Arithmetic operators
+2) Assignment operators
+3) Relational operators
+4) Logical operators
+
+(1) Arithmetic operators:
+-Addition(+)
+-Subtraction(-)
+-Multiplication(*)
+-Division(/)
+-Modulus(%)
+-Increment(++): Increment will happen with one value
+	-Pre Increment(++a): Increment before execution
+	-Post Increment(a++): Increment after execution
+-Decrement(--): Decrement will happen with one value
+	-Pre Decrement(--a): Decrement before execution
+	-Post Decrement(a--): Decrement after execution
+-Exponentiation(**)
+
+Concatenation: Adding two or more strings
+Typecasting: Converting one data type to another data type
+NaN: Not a Number: It is a property of the global object. It represents a value which is not a number.
+
+(2) Assignment operators:
+-'=', '+=', '-=', '*=', '/=', '%=', '**='
+
+(3) Relational operators:
+-Used to compare two values.
+-Return type: Boolean
+-Ex:>, <, >=, <=, ==, ===(strictly equal to), !=, !==(strictly not equal to)
+
+Q) What is the difference between == and ===?
+A)
+== -> It is used to compare the values
+=== -> It is used to compare the values and the data types
+!= -> It is used to compare the values
+!== -> It is used to compare the values and the data types
+
+(4) Logical operators:
+AND(&&): If both the conditions are true then the output will be true
+OR(||): If any one of the conditions is true or both the conditions are true then the output will be true
+NOT(!): If the condition is true then the output will be false and vice versa
+
+#Decision Making Statements:
+-Used to make decisions based on the conditions
+-Types:
+1) if: It will work for true statements
+2) if-else
+3) else-if ladder
+4) switch
+5) ternary operator
+
+prompt(): This method is used to collect the data from the user. It will display a dialog box with the message and the input field.
+
+#Looping Statements:
+-to execute the block of code repeatedly
+1) for loop
+-Will be used when the exact iteration count is known
+Syntax:
+for(initialization; condition; increment/decrement){
+	//code
+}
+2) while loop
+-Will be used when we don't know the iteration count
+Syntax:
+while(condition){
+	//code
+}
+3) do-while loop
+-Will be used when we don't know the iteration count
+Syntax:
+do{
+	//code
+}while(condition)
+
+Q) What are entry control and exit control loops?
+A)
+Entry control loops(for and while loops): The condition is checked at the beginning of the loop. If the condition is false then the loop will not be executed.
+Exit control loops(do-while loop): The condition is checked at the end of the loop. If the condition is false then the loop will be executed at least once.
+
+Minimum iteration count of for loop: 0
+Minimum iteration count of while loop: 0
+Minimum iteration count of do-while loop: 1
+
+Q) What is the difference between break and continue?
+A)
+break: It is used to terminate the loop when the condition is met.
+continue: It is used to skip the current iteration and move to the next iteration when the condition is met.
+
+#Functions:
+-Functions are the block of code that is used to perform a specific task.
+-Function is a non primitive data type
+-It is used to avoid the repetition of the code.
+-It is reusable.
+-It is used to make the code more readable and maintainable.
+
+Syntax:
+function function_name(optional parameters){
+	//code
+}
+function_name(arguments);
+
+Types of functions:
+1) Named function: It is a function that has a name and invoked with the same name.
+2) Anonymous function: It is a function that doesn't have a name to declare and to invoke.
+3) Function expression: It is a function that is assigned to a variable and invoked with the same variable.
+4) Immediate invoking function expression(IIFE): It is a function that is called immediately after the declaration. It can be invoked only once.
+5) Arrow function: It is a function that is used to concise the normal function syntax.
+Syntax:
+()=>{};
+-It is similar to Anonymous function.
+var function_name = (parameters) => {
+	//code
+}
+6) Higher order function: A function that takes another function as an argument or returns a function.
+7) Callback function: A function that is passed as an argument to another function(HOF).
+
+-Closure: Closure is a memory block where functions are bundled together/functions are nested together by giving accessibility to the inner most function to access the variables of the outer most function.
+
+
+#ES6
+-Current version of JavaScript is ES14.
+-ES6 is a stable version of JavaScript.
+ES-ECMAScript
+ECMA-European Computer Manufacturers Association
+
+Q) What is return keyword?
+A)
+-It is used to return the expression ,variables or the value from the function.
+-It is used to stop the execution of the function.
+
+
+#Arrays:
+-Collection of items or values.
+-It is a non primitive data type.
+-It can store both homogeneous and heterogeneous data.
+-It can store multiple values within a single variable.
+
+Syntax:[]
+var array_name = [value1, value2, value3, value4];
+
+Ex:
+
+Q) map and forEach difference
+A)
+-map: It is used to iterate the values of the array one by one. If we return the value, it returns new copied array.
+-forEach: It is used to iterate the values of the array one by one. It will not return anything (undefined).
+
+methods in array:
+-push(): It is used to add the elements at the end of the array.
+-pop(): It is used to remove the elements from the end of the array.
+-shift(): It is used to remove the elements from the beginning of the array.
+-unshift(): It is used to add the elements at the beginning of the array.
+-splice(): It is used to add or remove the elements from the array.
+-slice(): It is used to copy the elements from the array.
+-concat(): It is used to merge two or more arrays.
+-reverse(): It is used to reverse the elements of the array.
+-join(): It is used to join the elements of the array with the specified separator.
+
+Q) What is Object?
+A)
+-Object is an entity which is used to store the values in key-value pairs.
+-Object is a physical entity which has states(attributes/properties) and behaviors(methods)
+
+Syntax:
+let obj={};
+
+-Note: Object based language+OOPs
+
+Ex:
+let obj = {
+	name:"Sam"
+	age:25
+}
+
+#JSON:
+-JSON stands for JavaScript Object Notation.
+-It is a lightweight technique used to transmit the data from client to server and server to client
+Syntax:
+{
+	"key":"value"
+}
+-For JSON no need to store it inside variable
+-Both key and values should be double quoted except for numerical values
+
+methods:
+-parseJSON(): It is used to convert the JSON string into the JavaScript object.
+-stringify(): It is used to convert the JavaScript object into the JSON string.
+
+#Asynchronous in javascript
+-To perform multiple tasks in javascript
+
+Methods:
+1) setTimeout(): It is a web api used to perform async operations at specified timeout
+Syntax:
+setTimeout(callbackfn,timeout);
+
+2) setInterval(): It is a web api used to perform async operations at certain time intervals
+Syntax:
+setInterval(callbackfn,timeout);
+
+3) promise: Promise is an object which represents eventual completion or failures of an async operations.
+-The actual way of executing the promise is using instance methods
+(a) then(): It is used to execute fulfilled state
+(b) catch(): It is used to execute rejected state
+(c) finally(): Once promise is settled it will print/run
+
+##States of Promise:
+(i)Pending state
+(ii)Fulfilled state
+(iii)Rejected state
+
+Syntax:
+let p=new Promise((resolve,reject)=>{});
+
+
+4) async & await
+
+async: Async keyword is used to convert synchronous function into asynchronous function and start to execute the promise
+
+await: Await keyword is used to make the function to wait until the promise completes
+
+
+Note: By default, Javascript is synchronous(Single threaded).
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+**#DOM#**
+-DOM stands for Document Object Model
+-DOM is used to add, update, remove the content in the html document.
+-DOM is used to manipulate the content in the html document
+
+#DOM Methods
+1) document.getElementById(""): It is used to select the html element based on the "id atttribute" value
+-id attribute should be unique or it should be used with only one element
+
+2) document.getElementByClassName(""): It is used to select the html element based on "class attribute" value
+-class attribute can be used with multiple elements with common value
+
+3) document.getElementsByTagName(""): It is used to select the html element based on the tag names
+
+4) document.getElementsByName(""): It is used to select html element based on "name attribute" value
+
+-These below methods select the htlm elements based on css selectors.
+5) document.querySelector("#id"): It selects only one element.
+6) document.querySelectorAll(".class"): It selects multiple elements
+
+-innerText: It is a property used to manipulate just the plain text
+-innerHTML: It is a property used to add/remove the content along with tags.
+
+-Spread operator:-It will take out each and every value from the original array and store it inside one more new array(pure array)
+
+Syntax: [...variable];
+
+#Events in DOM:
+-Events are actions performed on HTML elements
+-Events are of click events,mouse events, key events
+
+Click events:-onclick,ondoubleclick,onsubmit,onchange
+Mouse events:-mouseover,mouseleave
+Key events:-keydown, keyup,keypress(depracated)
+
+#Dynamic Creation of HTML element from Javascript:-
+-To create dynamic element in JavaScript we have a method called as "document.createElement()".
+-To create an attribute we have a method called as "setAttribute()"
+-To remove an attribute we have a method called as "removeAttribute()"
+-Any element which is created in JavaScript will not add directly to the document, we have to use method to manually add it using the "append()" or "appendChild()" method
+
+#Task 
+Take an array of employee objects, where each object contains properties such as epmid, empname, empcompany, empsalary and empaddress where empaddress is further having two more properties of object such as empcity and emparea.
+Print these properties in the form of a table on the ui by using JavaScript.
+
+#Modules
+-Imports/Exports code to another js files
+-It is a feature of ES6 
+-type:"module" :-It is in experimental stage in JavaScript[To explicity define in the browser to classify it as a module]
+
+##Types(ES6 module):
+1) Named Modules
+-Definitely while importing should use the same name that you are defining exactly within {}. 
+-You can export as many modules of code that you want
+
+2) Defined Modules
+-While importing can use any name that you want.
+-You can export only one modules of code in one source file.
+-You should use the default keyword while exporting
+
+#Assignment
+Create a signup form that contains username(!empty),email(!empty),password(should be 6) and confirm password(same,!empty).
+Once you click on the submit button, an alert should be popped on your screen "from is submitted successfully" if and only if all the validations are correct.
+
+#############################################################################################################################################
+---------------------------------------------------------------REACT JS--------------------------------------------------------------------------
+#Three Tier Architecture for any application:
+1) Presentation Layer(web server)
+2) Application
+3) Database
+
+-Javascript is having some libraries and frameworks.
+>Libraries: It is a collection of codes.
+-Has less set of rules
+-Ex: ReactJs,JQuery
+
+>Frameworks: It is a collection of libraries
+-Has more set of rules
+-Ex: Angular,VueJs
+
+#Important features of ReactJS:
+1) ReactJS is a JavaScript library used to build rich reusable user interfaces.
+2) ReactJS is faster because of "Virtual DOM".
+3) ReactJS follows component-based architecture
+4) ReactJS follows unidirectional data flow.
+5) ReactJS follows both client-side and server-side rendering
+
+-ReactJS was introduced in 2011 by Facebook
+-Jordan Walke
+-In 2013 React was made as open-sourced
+-React is free and platform-independent
+
+#To install React app:
+-Install NodeJS
+-node -v
+-npm install create-react-app --globally
+-npm init create-react-app myapp
+-npx create-react-app myapp
+-vite react
+
+#Single page application:
+-Only one HTML file
+-No page reload or refresh
+
+#Multi page application:
+-Multiple HTML files
+-Page reload or refresh occurs
+
+-React is mainly used to create single page applications
+
+# What is VIrtual DOM
+-Virtual DOM is the virtual representation of the UI which is kept in the memory and later
+ synced with the real DOM with the help of a library called ReactDOM.
+-The updation of Real DOM with virtual DOM
+-The entire process of updating the real DOM with the help of virtual DOM is called as reconciliation
+-Diffing algorithm is used to perform one-to-one mapping.
+
+# JSX
+-JSX stands for JavaScript and XML.
+-JSX is a JavaScript syntax extension used to create HTML-like markup in React.
+-Actual way to create an element in React is by using a method called as
+	React.createElement("tagname",{property:"value"}/null,content/children)
+
+Ex: let ele = React.createElement(
+		"div",
+		{ className: "App" },
+		React.createElement("h1", null, "Header")
+  	);
+
+-JSX is not a part of React but it is recommended to use in React
+
+##Rules of JSX:
+1) Every element irrespective of paired/unpaired tag, both must be closed.
+Ex: <h1></h1>
+	<input/>
+
+2) If more than one jsx element is used then they must be wrapped under one parent element.
+Ex: <section>
+      <h1 style={{ color: "red" }}>Name: Subhapreet Patro</h1>
+      <input />
+    </section>
+
+## JSX expression
+-It is used to call the variable or mathematical expression inside the element
+Syntax: <h1>{variable/expression}</h1>
+
+# Components:
+-Components are the files or modules which consist of JavaScript related logics which can be reused
+-Components are divided into two types:
+1) Class based components(CBC)
+2) Functional based components(FBC)
+
+(i) Class based components(CBC):
+-CBC is similar to JavaScript ES6 class
+-CBC are "stateful" components because of default state object present inside the class
+
+-Syntax: 
+class Person{
+	constructor(name,age){
+		this.name=name;
+		this.age=age;
+	}
+}
+
+class Child extends Person{
+	constructor(name,age,city){
+		super(name,age);
+		this.city=city;
+	}
+}
+
+-Actual Syntax:
+class App extends React.Component{
+	render(){
+		return(
+			//JSX element
+		)
+	}
+}
+
+export default App;
+
+(ii) Functional based components(FBC):
+-FBC are similar to JavaScript functions
+-FBC are "stateless" because there is no state object until React v16.8
+
+-Syntax:
+function App(){
+	return(
+		//JSX element
+	)
+}
+
+export default App;
+
+OR
+
+const App()=>{
+	return(
+		//JSX element
+	)
+}
+export default App;
+
+Note: While creating a React Component the names must start with capital letters
+-Extension of a component file must be .jsx or .js
+-How to call a component
+	<App/> OR <App></App>
+
+# Component composition
+-Component composition is used to combine mutiple components into a single application
+
+#Props:
+-props is nothing but properties similar to html attributes
+-props is an immutable object.
+-props is an object used to exchange information or data from parent component to child component
+
+1)props children: It is a special type of prop used to pass the data/component as a prop to another component
+
+2)props drilling: It is used to pass the data down to the child component
+
+#State:
+-State is a mutable object which is used to store or isolate the data inside the component.
+
+(i) Class Component:
+-Class Component is having the state object by default.
+-Syntax:
+constructor() {
+    super();
+    this.state = {
+      users: ["Subhapreet Patro", "Subham Patnaik", "Divyansh Jain"],
+      num: 100,
+    };
+  }
+
+-To update the state object of a class component, we have a method called "this.setstate({})"
+
+(ii) Functional Component:
+-By default functional component is stateless because there is no state object
+-In React v16.8 they introduced a concept called as "Hooks"
+-Syntax: const[state,setState]=useState(initialValue);
+	State:It will store initial value
+	setState: It is used to update the state
+
+#Hooks:
+-Hooks is nothing but a function which implements all the features of class component into functional component
+
+##Basic Hooks:
+1) useState()
+- useState is a Hook that allows you to add state to functional components.
+- It returns an array with two elements: the current state value and a function to update it.
+- Syntax: const [state, setState] = useState(initialValue);
+2) useEffect()
+- useEffect is a Hook that allows you to perform side effects in functional components.
+- It runs after the first render and after every update.
+- You can optionally return a cleanup function to clean up side effects.
+- Syntax: useEffect(() => { /* side effect code */ return () => { /* cleanup code */ }; }, [dependencies]);
+3) useContext()
+- To avoid props drilling we use context api.
+- This hook is used to pass the data directly to the child component
+- useContext is a Hook that allows you to access the context value in functional components.
+- It takes a context object (the value returned from React.createContext) and returns the current context value.
+- Syntax: const value = useContext(MyContext);
+4) useRef()
+- ref is used to target native or real DOM elements
+- useRef is a Hook that allows you to create a mutable reference that persists across renders.
+- It can be used to access a DOM element directly or to store a mutable value that does not cause a re-render when updated.
+- Syntax: const refContainer = useRef(initialValue);
+
+#List and keys:
+-Every listed items in the array should have a unique key prop value so that it can track all the changes done in the lists
+
+#Tight Coupling:
+-One is dependent on another.
+-Child component->Parent Component
+
+#Loose Coupling:
+-Components need not depend on each other
+
+#Applying styling to your components
+1) External Stylesheet
+2) Inline CSS
+3) Module CSS
+
+#React.Fragment:
+-This will act as the parent element for the jsx element so that we can give key prop to the child elements without adding extra nodes(ex:div tags) to the DOM.
+
+Syntax:
+<React.Fragment>
+	{ /* child elements */ }
+</React.Fragment>
+-It will act as the parent element along with the provision for adding a key prop value
+
+
+OR
+
+<>
+	{ /* child elements */ }
+</>
+-It will act as a parent element without the provision for adding a key prop value
+
+#Routing in React:
+-Routing is a third party library used to provide navigation between two components or pages
+-Routing does not belong to React. It is a third party lirary called "react-router-dom"
+-npm install react-router-dom@latest
+-"react-router-dom":"^7.1.5"
+-Here:
+7-major version
+1-minor version
+5-patch version
+

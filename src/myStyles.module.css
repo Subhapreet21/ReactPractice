@@ -1,0 +1,13 @@
+.heading {
+  color: yellow;
+  background-color: blueviolet;
+}
+
+.font-style {
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.error {
+  font-size: 100px;
+}

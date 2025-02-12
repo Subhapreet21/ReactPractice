@@ -1,0 +1,26 @@
+.heading {
+  color: yellow;
+  background-color: blueviolet;
+}
+
+.font-style {
+  font-size: 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.m1 {
+  background-color: cyan;
+}
+
+.m2 {
+  background-color: orangered;
+}
+.heading1{
+  color: cyan;
+  background-color: orange;
+}
+
+.heading2{
+  color: green;
+  background-color: violet;
+}
