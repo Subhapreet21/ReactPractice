@@ -786,3 +786,24 @@ OR
 1-minor version
 5-patch version
 
+#CRUD Operations:
+C-Create -POST()
+R-Read -GET()
+U-update -PUT()
+D-Delete -DELETE()
+
+https:- Hyper Text Transfer Protocol Secured
+http:- Hyper Text Transfer Protocol
+smtp: Simple Mail Transfer Protocol
+tcp: Transmission Control Protocol
+ip: Internet Protocol
+ftp: File Transfer Protocol
+
+
+#json server:
+-npm i json-server -g
+-axios library to fetch the data
+-npm i axios
+-json-server --watch users.json --port=8000
+
+-Server is a highly configured supercomputer which is continuously on which gives the response to the client based on the request

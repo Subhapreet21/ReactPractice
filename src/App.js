@@ -150,31 +150,46 @@
 // export default App;
 
 import React from "react";
-import FunctionalComponent from "./components/FunctionalComponent";
-import ClassComponent from "./components/ClassComponent";
-import "./components/styles.css";
-import styles from "./myStyles.module.css";
-import ClassComponent2 from "./components/ClassComponent2";
-import MyForm from "./components/MyForm";
-import UseEffectEx from "./hookexamples/UseEffectEx";
-import RefExamples from "./hookexamples/RefExamples";
-import RefExample2 from "./hookexamples/RefExample2";
+// import FunctionalComponent from "./components/FunctionalComponent";
+// import ClassComponent from "./components/ClassComponent";
+// import "./components/styles.css";
+// import styles from "./myStyles.module.css";
+// import ClassComponent2 from "./components/ClassComponent2";
+// import MyForm from "./components/MyForm";
+// import UseEffectEx from "./hookexamples/UseEffectEx";
+// import RefExamples from "./hookexamples/RefExamples";
+// import RefExample2 from "./hookexamples/RefExample2";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./crudcomponents/Home";
+import Create from "./crudcomponents/Create";
+import Edit from "./crudcomponents/Edit";
+import { ToastContainer } from "react-toastify";
 const App = () => {
   return (
-    <div>
-      {/* <h1 className="heading">This is a styling class</h1>
-      <h2 className={styles.error}>ERROR 404!</h2> */}
-      {/* <FunctionalComponent clgName="MRUH" city="Hyderabad" apply={false}>
-        <h1>Hello,Good afternoon</h1>
-        <p>Success</p>
-      </FunctionalComponent> */}
-      {/* <ClassComponent /> */}
-      {/* <ClassComponent2 /> */}
-      {/* <MyForm /> */}
-      {/* <UseEffectEx /> */}
-      {/* <RefExamples /> */}
-      {/* <RefExample2 /> */}
-    </div>
+    // <div>
+    //   App
+    //   {/* <h1 className="heading">This is a styling class</h1>
+    //   <h2 className={styles.error}>ERROR 404!</h2> */}
+    //   {/* <FunctionalComponent clgName="MRUH" city="Hyderabad" apply={false}>
+    //     <h1>Hello,Good afternoon</h1>
+    //     <p>Success</p>
+    //   </FunctionalComponent> */}
+    //   {/* <ClassComponent /> */}
+    //   {/* <ClassComponent2 /> */}
+    //   {/* <MyForm /> */}
+    //   {/* <UseEffectEx /> */}
+    //   {/* <RefExamples /> */}
+    //   {/* <RefExample2 /> */}
+    // </div>
+
+    <BrowserRouter>
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/edit" element={<Edit />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

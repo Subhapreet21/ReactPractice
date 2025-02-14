@@ -1,0 +1,48 @@
+#homeBlock {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#homeBlock h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#homeBlock .createBtn {
+  margin-bottom: 20px;
+}
+
+#homeBlock .createBtn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+#homeBlock .createBtn a:hover {
+  background-color: #45a049;
+}
+
+#homeBlock table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#homeBlock th,
+#homeBlock td {
+  padding: 12px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+#homeBlock th {
+  background-color: aquamarine;
+}
+
+#homeBlock td {
+  background-color: aquamarine;
+}

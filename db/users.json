@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Subhapreet Patro",
+      "email": "subhapreetpatro2004@gmail.com",
+      "phone": "7569753540"
+    },
+    {
+      "id": "2",
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@example.com",
+      "phone": "9876543210"
+    },
+    {
+      "id": "3",
+      "name": "Isha Singh",
+      "email": "isha.singh@example.com",
+      "phone": "8765432109"
+    },
+    {
+      "id": "4",
+      "name": "Rohan Verma",
+      "email": "rohan.verma@example.com",
+      "phone": "7654321098"
+    },
+    {
+      "id": "5",
+      "name": "Ananya Gupta",
+      "email": "ananya.gupta@example.com",
+      "phone": "6543210987"
+    }
+  ]
+}
