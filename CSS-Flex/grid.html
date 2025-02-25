@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 10% 80% 10%;
+      }
+      .header {
+        background-color: aqua;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .leftmenu {
+        background-color: gray;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        background-color: blue;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightmenu {
+        background-color: gray;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        background-color: aqua;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent">
+      <section class="header">Header</section>
+      <section class="leftmenu">LeftMenu</section>
+      <section class="main">Main</section>
+      <section class="rightmenu">RightMenu</section>
+      <section class="footer">Footer</section>
+    </section>
+  </body>
+</html>
